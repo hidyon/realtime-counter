@@ -1,4 +1,4 @@
-var expres = require('express');
+var express = require('express');
 var router = express.Router();
 const connectController = require('./connectController')
 

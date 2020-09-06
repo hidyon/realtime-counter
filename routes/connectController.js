@@ -1,6 +1,6 @@
 const io = require('../socketio')
 
-module.export = {
+module.exports = {
 
   // コネクションが上限を超えている場合はルートへリダイレクトする
   // 超えていない場合は通過する
