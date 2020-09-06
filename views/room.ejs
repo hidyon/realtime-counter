@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='http://code.jquery.com/jquery.min.js'>
+    </script> 
+    <script src='/socket.io/socket.io.js'>
+    </script> 
+    <script>
+      var socket = io();
+      socket.on('count change', function(count) {
+        $('#count').text(count);
+      })
+    </script> 
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to room</p>
+    <div>
+      現在
+      <span id='count'></span>
+      人が視聴しています
+    </div>
+  </body>
+</html>
